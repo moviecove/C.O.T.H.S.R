@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Splash() {
   return (
-    <div className="h-screen w-full flex items-center justify-center bg-bgPrimary">
+    <div className="h-screen w-full flex items-center justify-center bg-[#232D26]">
       <motion.div
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -19,7 +19,7 @@ export default function Splash() {
           className="mx-auto mb-6"
         >
           <Image
-            src="/logo.svg"   // change to /logo.png if needed
+            src="/logo.svg"
             alt="Church of the Holy Spirit Logo"
             width={120}
             height={120}
@@ -28,16 +28,14 @@ export default function Splash() {
           />
         </motion.div>
 
-        <h1 className="text-3xl md:text-5xl font-semibold text-bgLight">
+        <h1 className="text-3xl md:text-5xl font-semibold text-[#CCD4C9]">
           Church of the Holy Spirit
         </h1>
 
-        <p className="mt-2 text-accentSecondary text-lg">
-          Rumouke
-        </p>
+        <p className="mt-2 text-[#899C8F] text-lg">Rumouke</p>
 
         <motion.div
-          className="mt-8 text-accentHighlight"
+          className="mt-8 text-[#AAC64B]"
           animate={{ opacity: [0.3, 1, 0.3] }}
           transition={{ repeat: Infinity, duration: 3 }}
         >
@@ -46,4 +44,4 @@ export default function Splash() {
       </motion.div>
     </div>
   );
-}
+          }
